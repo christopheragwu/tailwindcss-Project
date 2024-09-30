@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>allBlog</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+    <header
+      class="relative bg-cover bg-center bg-no-repeat h-96"
+      style="background-image: url('./img/bg.png')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex justify-between items-center relative z-10">
+          <!-- Blog Logo -->
+          <h1 class="text-4xl font-bold text-white">allBlog</h1>
+
+          <!-- Responsive Navbar -->
+          <nav class="hidden md:flex space-x-6 text-white">
+            <a href="#home" class="hover:text-gray-300">Home</a>
+            <a href="#featured" class="hover:text-gray-300">Featured</a>
+            <a href="#categories" class="hover:text-gray-300">Categories</a>
+            <a href="#recent-posts" class="hover:text-gray-300">Recent Posts</a>
+            <a href="#newsletter" class="hover:text-gray-300">Subscribe</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav
+          id="mobile-menu"
+          class="hidden md:hidden flex-col space-y-4 py-4 px-6 text-white"
+        >
+          <a href="#home">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#categories">Categories</a>
+          <a href="#recent-posts">Recent Posts</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Featured Posts Section -->
+    <section id="featured" class="py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Featured Posts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Post 1 -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./img/blog-1.png"
+              alt="Post 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">
+                Effective Leadership: Key Traits of Successful Leaders
+              </h3>
+              <p class="text-gray-700">
+                Learn about the critical qualities that define strong
+                leadership, from effective communication to emotional
+                intelligence, and how they can impact team success and
+                organizational growth.A brief excerpt of the featured blog post
+                goes here.
+              </p>
+            </div>
+          </div>
+          <!-- Post 2 -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./img/blog-2.png"
+              alt="Post 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">
+                Building a Career in Full-Stack Web Development
+              </h3>
+              <p class="text-gray-700">
+                Explore the essential skills, technologies, and career
+                opportunities available for aspiring full-stack developers in
+                the rapidly evolving tech landscape.
+              </p>
+            </div>
+          </div>
+          <!-- Post 3 -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./img/blog-3.png"
+              alt="Post 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">
+                The Power of Digital Transformation in Business
+              </h3>
+              <p class="text-gray-700">
+                Discover how embracing digital tools and strategies can
+                revolutionize business operations, drive growth, and enhance
+                customer experiences in today's competitive market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section id="categories" class="py-16 bg-gray-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Categories</h2>
+        <div class="flex justify-center space-x-4">
+          <span class="bg-blue-600 text-white py-2 px-4 rounded-full"
+            >Tech</span
+          >
+          <span class="bg-green-600 text-white py-2 px-4 rounded-full"
+            >Lifestyle</span
+          >
+          <span class="bg-red-600 text-white py-2 px-4 rounded-full"
+            >Travel</span
+          >
+          <span class="bg-purple-600 text-white py-2 px-4 rounded-full"
+            >Food</span
+          >
+          <span class="bg-yellow-600 text-white py-2 px-4 rounded-full"
+            >Business</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="py-16 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Recent Posts</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold">
+              The Power of Digital Transformation in Business
+            </h3>
+            <p class="text-gray-600">Published on September 22, 2024</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold">
+              Building a Career in Full-Stack Web Development
+            </h3>
+            <p class="text-gray-600">Published on September 20, 2024</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold">
+              Effective Leadership: Key Traits of Successful Leaders
+            </h3>
+            <p class="text-gray-600">Published on September 18, 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section id="newsletter" class="py-16 bg-gray-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Subscribe to Our Newsletter</h2>
+        <form class="max-w-xl mx-auto space-y-4">
+          <div>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full p-3 border border-gray-300 rounded-lg"
+              required
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>&copy; 2024 allBlog. All Rights Reserved.</p>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-blue-400">Facebook</a>
+          <a href="#" class="hover:text-blue-400">Twitter</a>
+          <a href="#" class="hover:text-blue-400">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle mobile menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
